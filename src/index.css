@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* High Density Theme color definitions */
+  --color-brand-primary: #3b82f6;
+  --color-brand-secondary: #2563eb;
+  --color-brand-accent: #3b82f6;
+  --color-status-danger: #ef4444;
+  --color-status-warning: #f59e0b;
+  --color-status-success: #10b981;
+}
+
+/* Scrollbar customization matching high density steel palette */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Page body background override to high density obsidian */
+body {
+  background-color: #0b0e14;
+  color: #d1d5db;
+}
+
+/* Utility Animations */
+@keyframes scanning-flow {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+.animate-scanning {
+  animation: scanning-flow 2s infinite linear;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.03); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}

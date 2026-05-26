@@ -1,0 +1,6 @@
+{
+  "name": "PhishGuard AI",
+  "description": "Enterprise-grade multi-modal anti-phishing threat detection, security auditing, and live infrastructure monitoring dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
