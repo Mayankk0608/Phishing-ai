@@ -5,5 +5,5 @@ coverage/
 .DS_Store
 *.log
 .env*
-!.env.example
-src/components/*
+.env.example
+src/components/Settings.tsx
